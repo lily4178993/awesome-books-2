@@ -88,6 +88,12 @@ button {
 button {
   cursor: pointer;
   width: auto;
+  background: hsl(0, 0%, 100%);
+  transition: var(--transition-1);
+}
+
+button:hover {
+  box-shadow: var(--shadow-1);
 }
 
 address { font-style: normal; }
@@ -157,6 +163,79 @@ h1 { font-size: var(--fontsize-title-1); }
   font-size: var(--fontsize-body-3);
   font-weight: var(--fontweight-bold);
   font-family: var(--fontfamily-heading-actions);
+}
+
+/* ---------------------------------*\
+    #SECTION BOOK LIST
+\*--------------------------------- */
+.books-container:has(.book) {
+  border: 2px solid var(--Very-Dark-Blue);
+  width: 60vw;
+  max-width: 900px;
+  height: auto;
+  max-height: 50vh;
+  margin: auto;
+  overflow-y: auto;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  width: 100%;
+  min-width: 300px;
+  padding: 10px 20px;
+  align-items: center;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-1);
+}
+
+.book:nth-child(odd) {
+  background-color: var(--Light-Grayish-Blue);
+}
+
+.book:hover,
+.book:focus,
+.book:nth-child(odd):hover,
+.book:nth-child(odd):focus {
+  background: var(--Light-Gray);
+}
+
+.book-item {
+  display: flex;
+  gap: 5px;
+  font-size: var(--fontsize-body-2);
+  font-weight: var(--fontweight-bold);
+  justify-content: space-between;
+}
+
+.book-title {
+  position: relative;
+  text-transform: capitalize;
+}
+
+.book-title::before {
+  position: absolute;
+  content: '"';
+  left: -8px;
+  top: -1%;
+}
+
+.book-title::after {
+  position: absolute;
+  content: '"';
+  top: -1%;
+}
+
+.book-author {
+  position: relative;
+  text-transform: capitalize;
+  margin: 0 2em;
+}
+
+.book-author::before {
+  position: absolute;
+  content: "by";
+  left: -55px;
 }
 
 /* ---------------------------------*\
