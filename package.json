@@ -1,0 +1,12 @@
+{
+  "name": "awesome-books-2",
+  "version": "1.0.0",
+  "description": "awesome books is a simple website that displays a list of books and allows you to add and remove books from that list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
