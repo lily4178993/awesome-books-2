@@ -12,7 +12,8 @@ import { saveBooksToStorage } from './storage.js';
 const newBook = new BookCollection();
 newBook.saveData();
 
-export default function formValidation() {
+// eslint-disable-next-line import/prefer-default-export
+export const formValidation = () => {
   // Retrieving the title and author input elements
   const titleInput = document.getElementById('title');
   const authorInput = document.getElementById('author');
@@ -31,4 +32,4 @@ export default function formValidation() {
     titleInput.value = '';
     authorInput.value = '';
   }
-}
+};
