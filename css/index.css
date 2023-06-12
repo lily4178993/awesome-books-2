@@ -1,4 +1,58 @@
 /* ---------------------------------*\
+    #CUSTOM PROPERTY
+\*--------------------------------- */
+:root {
+  /*
+   * COLORS
+  */
+
+  /* primary */
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+
+  /* accent */
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+
+  /* neutral */
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+
+  /*
+   * TYPOGRAPHY
+  */
+
+  /* font-family */
+  --fontfamily-heading-actions: 'Raleway', sans-serif;
+  --fontfamily-body: 'Open Sans', sans-serif;
+
+  /* font-size */
+  --fontsize-title-1: 2.8rem;
+  --fontsize-title-2: 2.4rem;
+  --fontsize-body-1: 1.6rem;
+  --fontsize-body-2: 1.4rem;
+  --fontsize-body-3: 1.1rem;
+
+  /* font-weight */
+  --fontweight-regular: 400;
+  --fontweight-bold: 700;
+
+  /*
+   * SHADOW
+  */
+  --shadow-1: 0 2px 6px hsl(0, 0%, 0%, 0.25);
+
+  /*
+   * BORDER RADIUS
+  */
+  --radius3: 3px;
+
+  /*
+   * TRANSITION
+  */
+  --transition-1: 250ms ease;
+}
+
+/* ---------------------------------*\
     #RESET
 \*--------------------------------- */
 
