@@ -28,9 +28,9 @@
   /* font-size */
   --fontsize-title-1: 2.8rem;
   --fontsize-title-2: 2.4rem;
-  --fontsize-body-1: 1.6rem;
-  --fontsize-body-2: 1.4rem;
-  --fontsize-body-3: 1.1rem;
+  --fontsize-body-1: 1.8rem;
+  --fontsize-body-2: 1.6rem;
+  --fontsize-body-3: 1.4rem;
 
   /* font-weight */
   --fontweight-regular: 400;
@@ -116,10 +116,10 @@ html { font-size: 10px; }
 
 .navbar .row-list li a {
   font-family: var(--fontfamily-heading-actions);
-  font-size: 1.7rem;
+  font-size: var(--fontsize-body-1);
 }
 
-h1 { font-size: 2.5rem; }
+h1 { font-size: var(--fontsize-title-1); }
 
 /* ---------------------------------*\
     #SECTION
@@ -142,7 +142,7 @@ h1 { font-size: 2.5rem; }
 
 .section-container h2 {
   font-weight: var(--fontweight-bold);
-  font-size: var(--fontsize-body-2);
+  font-size: var(--fontsize-title-2);
   text-align: center;
   margin: 1em 1em 2em 1em;
 }
