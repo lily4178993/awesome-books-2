@@ -92,9 +92,7 @@ button {
   transition: var(--transition-1);
 }
 
-button:hover {
-  box-shadow: var(--shadow-1);
-}
+button:hover { box-shadow: var(--shadow-1); }
 
 address { font-style: normal; }
 
@@ -142,9 +140,7 @@ h1 { font-size: var(--fontsize-title-1); }
 /* ---------------------------------*\
     #SECTION
 \*--------------------------------- */
-.section-container {
-  display: none;
-}
+.section-container { display: none; }
 
 .section-container.active {
   display: block;
@@ -201,16 +197,12 @@ h1 { font-size: var(--fontsize-title-1); }
   transition: var(--transition-1);
 }
 
-.book:nth-child(odd) {
-  background-color: var(--Light-Grayish-Blue);
-}
+.book:nth-child(odd) { background-color: var(--Light-Grayish-Blue); }
 
 .book:hover,
 .book:focus,
 .book:nth-child(odd):hover,
-.book:nth-child(odd):focus {
-  background: var(--Light-Gray);
-}
+.book:nth-child(odd):focus { background: var(--Light-Gray); }
 
 .book-item {
   display: flex;
@@ -263,18 +255,14 @@ form {
   align-items: center;
 }
 
-label {
-  display: none;
-}
+label { display: none; }
 
 .input-field { transition: var(--transition-1); }
 
 .input-field:hover,
 .input-field:focus { box-shadow: var(--shadow-1); }
 
-.submit {
-  align-self: flex-end;
-}
+.submit { align-self: flex-end; }
 
 /* ---------------------------------*\
     #SECTION CONTACT
@@ -286,9 +274,7 @@ label {
   font-weight: var(--fontweight-bold);
 }
 
-#contact-section ul {
-  margin-top: 1.5em;
-}
+#contact-section ul { margin-top: 1.5em; }
 
 /* ---------------------------------*\
     #FOOTER
