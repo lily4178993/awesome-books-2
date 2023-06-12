@@ -12,12 +12,7 @@ import { saveBooksToStorage } from './storage.js';
 const newBook = new BookCollection();
 newBook.saveData();
 
-// Event listener for the form submission
-const form = document.querySelector('form');
-form.addEventListener('submit', (event) => {
-  // Preventing the default form submission behavior
-  event.preventDefault();
-
+export default function formValidation() {
   // Retrieving the title and author input elements
   const titleInput = document.getElementById('title');
   const authorInput = document.getElementById('author');
@@ -36,4 +31,4 @@ form.addEventListener('submit', (event) => {
     titleInput.value = '';
     authorInput.value = '';
   }
-});
+}
