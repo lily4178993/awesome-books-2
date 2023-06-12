@@ -1,0 +1,38 @@
+/* ---------------------------------*\
+    #RESET
+\*--------------------------------- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+span,
+input,
+button { display: block; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button {
+  border: 1px transparent;
+  background: none;
+  font: inherit;
+}
+
+button { cursor: pointer; }
+
+address { font-style: normal; }
+
+html {
+  font-size: 10px;
+}
