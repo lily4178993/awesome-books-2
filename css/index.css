@@ -1,4 +1,58 @@
 /* ---------------------------------*\
+    #CUSTOM PROPERTY
+\*--------------------------------- */
+:root {
+  /*
+   * COLORS
+  */
+
+  /* primary */
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+
+  /* accent */
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+
+  /* neutral */
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+
+  /*
+   * TYPOGRAPHY
+  */
+
+  /* font-family */
+  --fontfamily-heading-actions: 'Raleway', sans-serif;
+  --fontfamily-body: 'Open Sans', sans-serif;
+
+  /* font-size */
+  --fontsize-title-1: 2.8rem;
+  --fontsize-title-2: 2.4rem;
+  --fontsize-body-1: 1.8rem;
+  --fontsize-body-2: 1.6rem;
+  --fontsize-body-3: 1.4rem;
+
+  /* font-weight */
+  --fontweight-regular: 400;
+  --fontweight-bold: 700;
+
+  /*
+   * SHADOW
+  */
+  --shadow-1: 0 2px 6px hsl(0, 0%, 0%, 0.25);
+
+  /*
+   * BORDER RADIUS
+  */
+  --radius3: 3px;
+
+  /*
+   * TRANSITION
+  */
+  --transition-1: 250ms ease;
+}
+
+/* ---------------------------------*\
     #RESET
 \*--------------------------------- */
 
@@ -24,15 +78,122 @@ a {
 
 input,
 button {
-  border: 1px transparent;
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius3);
   background: none;
   font: inherit;
 }
 
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+  width: auto;
+}
 
 address { font-style: normal; }
 
-html {
-  font-size: 10px;
+html { font-size: 10px; }
+
+/* ---------------------------------*\
+    #HEADER
+\*--------------------------------- */
+.navbar-container {
+  position: fixed;
+  padding: 10px;
+  top: 4px;
+  left: 50%;
+  width: 97%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--Very-Dark-Blue);
+  border-radius: var(--radius3);
+}
+
+.navbar .row-list { display: flex; }
+.navbar .row-list li { margin: 0 20px; }
+
+.navbar .row-list li a {
+  font-family: var(--fontfamily-heading-actions);
+  font-size: var(--fontsize-body-1);
+}
+
+h1 { font-size: var(--fontsize-title-1); }
+
+/* ---------------------------------*\
+    #SECTION
+\*--------------------------------- */
+.section-container {
+  display: none;
+}
+
+.section-container.active {
+  display: block;
+  position: fixed;
+  width: 97%;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--fontfamily-body);
+  font-size: var(--fontsize-body-3);
+}
+
+.section-container h2 {
+  font-weight: var(--fontweight-bold);
+  font-size: var(--fontsize-title-2);
+  text-align: center;
+  margin: 1em 1em 2em 1em;
+}
+
+/* ---------------------------------*\
+    #SECTION ADD NEW BOOK
+\*--------------------------------- */
+form {
+  width: 50vw;
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: none;
+}
+
+.submit {
+  align-self: flex-end;
+}
+
+/* ---------------------------------*\
+    #SECTION CONTACT
+\*--------------------------------- */
+.section-container.active#contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: var(--fontweight-bold);
+}
+
+#contact-section ul {
+  margin-top: 1.5em;
+}
+
+/* ---------------------------------*\
+    #FOOTER
+\*--------------------------------- */
+footer {
+  position: fixed;
+  bottom: 4px;
+  left: 50%;
+  width: 97%;
+  padding: 16px 2em;
+  border: 2px solid var(--Very-Dark-Blue);
+  border-radius: var(--radius3);
+  transform: translateX(-50%);
+  font-size: var(--fontsize-body-1);
+  font-weight: var(--fontweight-bold);
 }
