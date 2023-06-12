@@ -174,7 +174,6 @@ label {
 .section-container.active#contact-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   font-weight: var(--fontweight-bold);
 }
