@@ -3,11 +3,11 @@
  */
 const storageKey = 'books';
 
-export function getBooksFromStorage() {
+export const getBooksFromStorage = () => {
   const books = JSON.parse(localStorage.getItem(storageKey));
   return books || [];
-}
+};
 
-export function saveBooksToStorage(books) {
+export const saveBooksToStorage = (books) => {
   localStorage.setItem(storageKey, JSON.stringify(books));
-}
+};
