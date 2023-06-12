@@ -88,7 +88,11 @@ button {
 button {
   cursor: pointer;
   width: auto;
+  background: hsl(0, 0%, 100%);
+  transition: var(--transition-1);
 }
+
+button:hover { box-shadow: var(--shadow-1); }
 
 address { font-style: normal; }
 
@@ -112,11 +116,23 @@ html { font-size: 10px; }
 }
 
 .navbar .row-list { display: flex; }
-.navbar .row-list li { margin: 0 20px; }
+
+.navbar .row-list li {
+  margin: 0 20px;
+  transition: all var(--transition-1);
+}
 
 .navbar .row-list li a {
   font-family: var(--fontfamily-heading-actions);
   font-size: var(--fontsize-body-1);
+}
+
+.navbar .row-list li a.active { color: var(--Desaturated-Blue); }
+
+.navbar .row-list li:hover a:is(:not(.active)),
+.navbar .row-list li:focus a:is(:not(.active)) {
+  color: var(--Moderate-Cyan);
+  text-decoration: underline;
 }
 
 h1 { font-size: var(--fontsize-title-1); }
@@ -124,9 +140,7 @@ h1 { font-size: var(--fontsize-title-1); }
 /* ---------------------------------*\
     #SECTION
 \*--------------------------------- */
-.section-container {
-  display: none;
-}
+.section-container { display: none; }
 
 .section-container.active {
   display: block;
@@ -147,6 +161,87 @@ h1 { font-size: var(--fontsize-title-1); }
   margin: 1em 1em 2em 1em;
 }
 
+.date-time {
+  position: fixed;
+  width: 97%;
+  top: 9%;
+  right: 51.9%;
+  transform: translate(49.5%, -9%);
+  text-align: right;
+  font-size: var(--fontsize-body-3);
+  font-weight: var(--fontweight-bold);
+  font-family: var(--fontfamily-heading-actions);
+}
+
+/* ---------------------------------*\
+    #SECTION BOOK LIST
+\*--------------------------------- */
+.books-container:has(.book) {
+  border: 2px solid var(--Very-Dark-Blue);
+  width: 60vw;
+  max-width: 900px;
+  height: auto;
+  max-height: 50vh;
+  margin: auto;
+  overflow-y: auto;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  width: 100%;
+  min-width: 300px;
+  padding: 10px 20px;
+  align-items: center;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-1);
+}
+
+.book:nth-child(odd) { background-color: var(--Light-Grayish-Blue); }
+
+.book:hover,
+.book:focus,
+.book:nth-child(odd):hover,
+.book:nth-child(odd):focus { background: var(--Light-Gray); }
+
+.book-item {
+  display: flex;
+  gap: 5px;
+  font-size: var(--fontsize-body-2);
+  font-weight: var(--fontweight-bold);
+  justify-content: space-between;
+}
+
+.book-title {
+  position: relative;
+  text-transform: capitalize;
+}
+
+.book-title::before {
+  position: absolute;
+  content: '"';
+  left: -8px;
+  top: -1%;
+}
+
+.book-title::after {
+  position: absolute;
+  content: '"';
+  top: -1%;
+}
+
+.book-author {
+  position: relative;
+  text-transform: capitalize;
+  margin: 0 2em;
+}
+
+.book-author::before {
+  position: absolute;
+  content: "by";
+  left: -55px;
+}
+
 /* ---------------------------------*\
     #SECTION ADD NEW BOOK
 \*--------------------------------- */
@@ -160,13 +255,14 @@ form {
   align-items: center;
 }
 
-label {
-  display: none;
-}
+label { display: none; }
 
-.submit {
-  align-self: flex-end;
-}
+.input-field { transition: var(--transition-1); }
+
+.input-field:hover,
+.input-field:focus { box-shadow: var(--shadow-1); }
+
+.submit { align-self: flex-end; }
 
 /* ---------------------------------*\
     #SECTION CONTACT
@@ -178,9 +274,7 @@ label {
   font-weight: var(--fontweight-bold);
 }
 
-#contact-section ul {
-  margin-top: 1.5em;
-}
+#contact-section ul { margin-top: 1.5em; }
 
 /* ---------------------------------*\
     #FOOTER
