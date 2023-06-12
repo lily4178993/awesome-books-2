@@ -267,6 +267,11 @@ label {
   display: none;
 }
 
+.input-field { transition: var(--transition-1); }
+
+.input-field:hover,
+.input-field:focus { box-shadow: var(--shadow-1); }
+
 .submit {
   align-self: flex-end;
 }
