@@ -1,5 +1,5 @@
 // Importing formValidation function from '../modules/books-form.js'
-import formValidation from '../modules/books-form.js';
+import { formValidation } from '../modules/books-form.js';
 
 // Get the form submission
 const form = document.querySelector('form');
