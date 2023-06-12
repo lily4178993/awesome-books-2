@@ -1,7 +1,8 @@
-// decare variable to store menulinks
+// decare variable to store menu links
 const menulinks = document.querySelectorAll('.row-list li a');
-// section navigation
-menulinks.forEach((menulink) => {
+
+// eslint-disable-next-line import/prefer-default-export
+export const menuClickEvent = menulinks.forEach((menulink) => {
   menulink.addEventListener('click', (event) => {
     event.preventDefault();
     const sectionId = menulink.dataset.section;
