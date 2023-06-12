@@ -118,11 +118,23 @@ html { font-size: 10px; }
 }
 
 .navbar .row-list { display: flex; }
-.navbar .row-list li { margin: 0 20px; }
+
+.navbar .row-list li {
+  margin: 0 20px;
+  transition: all var(--transition-1);
+}
 
 .navbar .row-list li a {
   font-family: var(--fontfamily-heading-actions);
   font-size: var(--fontsize-body-1);
+}
+
+.navbar .row-list li a.active { color: var(--Desaturated-Blue); }
+
+.navbar .row-list li:hover a:is(:not(.active)),
+.navbar .row-list li:focus a:is(:not(.active)) {
+  color: var(--Moderate-Cyan);
+  text-decoration: underline;
 }
 
 h1 { font-size: var(--fontsize-title-1); }
