@@ -147,6 +147,18 @@ h1 { font-size: var(--fontsize-title-1); }
   margin: 1em 1em 2em 1em;
 }
 
+.date-time {
+  position: fixed;
+  width: 97%;
+  top: 9%;
+  right: 51.9%;
+  transform: translate(49.5%, -9%);
+  text-align: right;
+  font-size: var(--fontsize-body-3);
+  font-weight: var(--fontweight-bold);
+  font-family: var(--fontfamily-heading-actions);
+}
+
 /* ---------------------------------*\
     #SECTION ADD NEW BOOK
 \*--------------------------------- */
