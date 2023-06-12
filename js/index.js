@@ -1,6 +1,9 @@
 // Importing formValidation function from '../modules/books-form.js'
 import { formValidation } from '../modules/books-form.js';
 
+// Importing menuClickEvent function from '../modules/menu.js'
+import { menuClickEvent } from '../modules/menu.js';
+
 // Get the form submission
 const form = document.querySelector('form');
 
@@ -11,3 +14,6 @@ form.addEventListener('submit', (event) => {
   // Call the form validation function
   formValidation();
 });
+
+// Call the menu click event function
+menuClickEvent();
