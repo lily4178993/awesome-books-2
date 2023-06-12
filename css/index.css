@@ -115,3 +115,19 @@ html { font-size: 10px; }
 }
 
 h1 { font-size: 2.5rem; }
+
+/* ---------------------------------*\
+    #FOOTER
+\*--------------------------------- */
+footer {
+  position: fixed;
+  bottom: 4px;
+  left: 50%;
+  width: 97%;
+  padding: 16px 2em;
+  border: 2px solid var(--Very-Dark-Blue);
+  border-radius: var(--radius3);
+  transform: translateX(-50%);
+  font-size: var(--fontsize-body-1);
+  font-weight: var(--fontweight-bold);
+}
