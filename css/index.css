@@ -131,6 +131,7 @@ h1 { font-size: 2.5rem; }
   top: 22%;
   left: 50%;
   transform: translate(-50%, -20%);
+  font-family: var(--fontfamily-body);
   font-size: var(--fontsize-body-3);
 }
 
@@ -139,6 +140,21 @@ h1 { font-size: 2.5rem; }
   font-size: var(--fontsize-body-2);
   text-align: center;
   margin: 1em 1em 2em 1em;
+}
+
+/* ---------------------------------*\
+    #SECTION CONTACT
+\*--------------------------------- */
+.section-container.active#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--fontweight-bold);
+}
+
+#contact-section ul {
+  margin-top: 1.5em;
 }
 
 /* ---------------------------------*\
