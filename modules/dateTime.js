@@ -1,5 +1,5 @@
 // Importing DateTime function from luxon library
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+import { DateTime } from './Luxon.js';
 
 const getCurrentDate = () => {
   // get the current time
