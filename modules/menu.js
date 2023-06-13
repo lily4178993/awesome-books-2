@@ -1,8 +1,7 @@
 // decare variable to store menu links
 const menulinks = document.querySelectorAll('.row-list li a');
 
-// eslint-disable-next-line import/prefer-default-export
-export const menuClickEvent = menulinks.forEach((menulink) => {
+const menuClickEvent = menulinks.forEach((menulink) => {
   menulink.addEventListener('click', (event) => {
     event.preventDefault();
     const sectionId = menulink.dataset.section;
@@ -19,3 +18,5 @@ export const menuClickEvent = menulinks.forEach((menulink) => {
     menulink.classList.add('active');
   });
 });
+
+export { menuClickEvent as default };
