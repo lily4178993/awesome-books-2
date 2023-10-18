@@ -123,7 +123,7 @@ cd awesome-books-2
 ```
 - Checkout the branch
 ```
-git checkout main
+git checkout dev
 ```
 <br><hr>
 
@@ -186,8 +186,7 @@ This project was deployed using GitHub Pages. For more information about how to 
 
 👤 **Nelly Telli**
 - GitHub: [@lily4178993](https://github.com/lily4178993/)
-- Twitter: [@nelly_telli](https://twitter.com/nelly_telli)
-- LinkedIn: [Nelly T.](https://www.linkedin.com/in/nelly-t-330414266/)
+- LinkedIn: [Nelly T.](https://www.linkedin.com/in/nellytelli)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
