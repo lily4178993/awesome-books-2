@@ -291,3 +291,7 @@ footer {
   font-size: var(--fontsize-body-1);
   font-weight: var(--fontweight-bold);
 }
+
+footer .footer-link {
+  display: inline;
+}
